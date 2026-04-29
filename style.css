@@ -1,0 +1,210 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #334155;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Base Container styles - פריסה על כל המסך */
+#container,
+.layout-table {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    overflow: hidden;
+}
+
+/* Header בדף הבית */
+#header {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #38bdf8;
+}
+
+#header h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* תפריט רוחבי באמצעות Inline-Block (שיטה ישנה שעדיין עובדת) */
+#menu {
+    padding: 30px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    /* בלי Flexbox! */
+    margin: 10px 12px;
+}
+
+#menu li a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f8fafc;
+    color: #475569;
+    border-radius: 30px;
+    border: 1px solid #e2e8f0;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+#menu li a:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+    color: #0f172a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+#map-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.map-image {
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    cursor: crosshair;
+    /* נותן תחושה שאפשר ללחוץ על חלקים */
+}
+
+/* תוכן - עימוד טבלאות */
+.layout-table {
+    border-collapse: collapse;
+}
+
+.header-cell {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 4px solid #93c5fd;
+}
+
+.header-cell h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 28px;
+}
+
+.sidebar-cell {
+    background-color: #f8fafc;
+    padding: 30px 25px;
+    border-left: 1px solid #e2e8f0;
+}
+
+.sidebar-cell h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #334155;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-cell ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-cell li {
+    margin-bottom: 12px;
+}
+
+.sidebar-cell a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.sidebar-cell a:hover {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.content-cell {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.content-cell h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.content-cell p {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-wrapper img {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+}
+
+.footer-cell {
+    background-color: #f1f5f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 14px;
+}
